@@ -2,14 +2,16 @@ import React, { Component } from 'react'
 import pictures from "./photos.json"
 import Main from './components/Main/Main'
 import Navigation from './components/Navigation/Navigation'
+import Cards from './components/Cards/Cards.js'
 
 //Shuffle Upon Each Click
+// shuffle upon each click
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
-    [array[i], array[j] = array[j], array[i]]
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
   }
-  return array
+  return array;
 }
 
 
@@ -80,9 +82,38 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
         <Navigation />
-        <Main />
+        <div
+          className="alert alert-danger"
+          style={{ opacity: this.state.showAlert }}
+        >
+          You clicked on this already, try again...
+          </div>
+        <div
+          className="alert alert-success"
+          style={{ opacity: this.state.showSuccess }}
+        >
+          Brilliant, you haven't clicked on duplicates!
+          </div>
+        <Main
+          title="MoMA clicky Game"
+          score={this.state.score}
+          topScore={this.state.topScore}
+        />
+        <div className="row">
+          {this.state.pictures.map(picture => (
+            <Cards
+              key={picture.id}
+              id={picture.id}
+              artist={picture.artist}
+              title={picture.title}
+              year={picture.year}
+              image={picture.image}
+              clickedImage={this.clickedImage}
+            />
+          ))}
+        </div>
       </div>
     )
   }
