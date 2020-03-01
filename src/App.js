@@ -3,6 +3,7 @@ import pictures from "./photos.json"
 import Main from './components/Main/Main'
 import Navigation from './components/Navigation/Navigation'
 import Cards from './components/Cards/Cards.js'
+import './App.css'
 
 //Shuffle Upon Each Click
 function shuffle(array) {
@@ -102,7 +103,7 @@ class App extends Component {
           topScore={this.state.topScore}
         />
 
-        <div className="row">
+        <div className="image-container">
           {this.state.pictures.map(picture => (
             <Cards
               key={picture.id}
