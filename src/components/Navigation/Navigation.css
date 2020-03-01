@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.navigation {
+    height: 10vh;
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}

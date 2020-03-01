@@ -5,7 +5,6 @@ import Navigation from './components/Navigation/Navigation'
 import Cards from './components/Cards/Cards.js'
 
 //Shuffle Upon Each Click
-// shuffle upon each click
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -84,31 +83,31 @@ class App extends Component {
     return (
       <div className="container">
         <Navigation />
+
         <div
           className="alert alert-danger"
-          style={{ opacity: this.state.showAlert }}
-        >
+          style={{ opacity: this.state.showAlert }}>
           You clicked on this already, try again...
-          </div>
+        </div>
+
         <div
           className="alert alert-success"
-          style={{ opacity: this.state.showSuccess }}
-        >
+          style={{ opacity: this.state.showSuccess }}>
           Brilliant, you haven't clicked on duplicates!
-          </div>
+        </div>
+
         <Main
-          title="MoMA clicky Game"
+          title="Rick & Morty Clicky Game"
           score={this.state.score}
           topScore={this.state.topScore}
         />
+
         <div className="row">
           {this.state.pictures.map(picture => (
             <Cards
               key={picture.id}
               id={picture.id}
-              artist={picture.artist}
               title={picture.title}
-              year={picture.year}
               image={picture.image}
               clickedImage={this.clickedImage}
             />

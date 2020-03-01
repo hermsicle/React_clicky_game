@@ -9,9 +9,8 @@ function Cards(props) {
                     <div className="text">
                         {props.title}
                         <br />
-                        by
-              <br />
-                        {props.artist} in {props.year}
+                        <br />
+                        {props.artist}
                     </div>
                 </div>
             </div>

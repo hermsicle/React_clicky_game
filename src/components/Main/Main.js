@@ -11,7 +11,7 @@ function Main(props) {
             </div>
             <div className="row">
                 <div className="col-md-12 col-right">
-                    <h6>Click on a famous art work, but don't click on it more than once!</h6></div>
+                    <h6>Click on an image to start game!</h6></div>
             </div>
         </header>
     )

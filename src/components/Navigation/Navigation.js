@@ -1,9 +1,11 @@
 import React from 'react'
-
+import './Navigation.css'
 function navigation() {
     return (
-        <div>
-            <h1>Hello from Navigation</h1>
+        <div className="navigation">
+            <div className="nav">
+                <h1>Clicky Game: Rick & Morty Edition</h1>
+            </div>
         </div>
     )
 }
