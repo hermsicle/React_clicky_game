@@ -86,15 +86,15 @@ class App extends Component {
         <Navigation />
 
         <div
-          className="alert alert-danger"
+          className="showAlert"
           style={{ opacity: this.state.showAlert }}>
-          You clicked on this already, try again...
+          <h1 className="showAlert">You clicked on this already, try again...</h1>
         </div>
 
         <div
-          className="alert alert-success"
+          className="showSuccess"
           style={{ opacity: this.state.showSuccess }}>
-          Brilliant, you haven't clicked on duplicates!
+          <h1 className="showSuccess">Brilliant, you haven't clicked on duplicates!</h1>
         </div>
 
         <Main
