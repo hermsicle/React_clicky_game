@@ -8,8 +8,13 @@ Each time a user clicks on an image, the user score is tracked, and the current 
 
 
 <h2>Technologies Used</h2>
-*React.js
-*HTML
-*CSS
-*Javascript
-*Node.js
+<ul>
+<li>React.js</li>
+<li>HTML5</li>
+<li>CSS</li>
+<li>Javascript</li>
+<li>Node.js</li>
+</ul>
+
+
+
