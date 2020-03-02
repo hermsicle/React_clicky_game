@@ -21,6 +21,7 @@ class App extends Component {
     score: 0,
     topScore: 0,
     showAlert: 0,
+    showSuccess: 0,
     clickedPicture: []
   }
 
@@ -38,6 +39,9 @@ class App extends Component {
       //Push the id into that empty array of clickedPicture
       clickedPicture.push(id);
       console.log("clicked Image");
+      this.setState({
+        showSuccess: 1
+      })
       //Run the score function
       this.handleIncrement();
       //run the reshuffle function after each click
@@ -56,8 +60,9 @@ class App extends Component {
         score: 0,
         clickedPicture: []
       })
-      console.log("diplicate");
+      console.log("duplicate");
       this.setState({
+        showSuccess: 0,
         showAlert: 1
       })
     }
@@ -85,11 +90,10 @@ class App extends Component {
       <div className="container">
         <Navigation />
 
-        <div
-          className="showAlert"
-          style={{ opacity: this.state.showAlert }}>
-          <h1 className="showAlert">You clicked on this already, try again...</h1>
-        </div>
+        <Main
+          score={this.state.score}
+          topScore={this.state.topScore}
+        />
 
         <div
           className="showSuccess"
@@ -97,11 +101,11 @@ class App extends Component {
           <h1 className="showSuccess">Brilliant, you haven't clicked on duplicates!</h1>
         </div>
 
-        <Main
-          title="Rick & Morty Clicky Game"
-          score={this.state.score}
-          topScore={this.state.topScore}
-        />
+        <div
+          className="showAlert"
+          style={{ opacity: this.state.showAlert }}>
+          <h1 className="showAlert">You clicked on this already, try again...</h1>
+        </div>
 
         <div className="image-container">
           {this.state.pictures.map(picture => (
