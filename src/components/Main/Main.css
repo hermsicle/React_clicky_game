@@ -1,0 +1,21 @@
+.score{
+    display: flex;
+    border: 1px solid black;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+    background-color: cornflowerblue;
+}
+
+.highScore{
+    font-size: 25px;
+    color: white;
+}
+.currentScore{
+    font-size: 25px;
+    color: white;
+}
+.clickStart{
+    font-size: 25px;
+    color: white;
+}

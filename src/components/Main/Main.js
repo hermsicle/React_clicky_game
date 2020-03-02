@@ -1,17 +1,17 @@
 import React from 'react'
-
+import './Main.css'
 
 function Main(props) {
     return (
-        <header className="scoreB">
-            <div className="row">
-                <div className="col-md-6 col-left"><h5>{props.title}</h5></div>
-                <div className="col-md-3 col-right"><h6>High Score {props.score}</h6></div>
-                <div className="col-md-3 col-right"><h6>Current Score: {props.topScore}</h6></div>
+        <header className="score">
+            <div className="high-score">
+                <h6 className="highScore">High Score: {props.score}</h6>
             </div>
-            <div className="row">
-                <div className="col-md-12 col-right">
-                    <h6>Click on an image to start game!</h6></div>
+            <div className="current-score">
+                <h6 className="currentScore">Current Score: {props.topScore}</h6>
+            </div>
+            <div className="click-start">
+                <h6 className="clickStart">Click on an image to start game!</h6>
             </div>
         </header>
     )
