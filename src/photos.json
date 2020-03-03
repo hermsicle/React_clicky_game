@@ -1,62 +1,62 @@
 [
     {
         "id": 1,
-        "image": "/Assets/Images/acidrick.png",
+        "image": "/assets/images/acidrick.png",
         "title": "Acid Rick"
     },
     {
         "id": 2,
-        "image": "/Assets/Images/angryplanet.png",
+        "image": "/assets/images/angryplanet.png",
         "title": "Angry Planet"
     },
     {
         "id": 3,
-        "image": "/Assets/Images/angrysun.png",
+        "image": "/assets/images/angrysun.png",
         "title": "Angry Sun"
     },
     {
         "id": 4,
-        "image": "/Assets/Images/coolrick.png",
+        "image": "/assets/images/coolrick.png",
         "title": "Cool Rick"
     },
     {
         "id": 5,
-        "image": "/Assets/Images/derpmorty.png",
+        "image": "/assets/images/derpmorty.png",
         "title": "Derp Morty"
     },
     {
         "id": 6,
-        "image": "/Assets/Images/derprick.png",
+        "image": "/assets/images/derprick.png",
         "title": "Derp Rick"
     },
     {
         "id": 7,
-        "image": "/Assets/Images/doggy.png",
+        "image": "/assets/images/doggy.png",
         "title": "Doggy"
     },
     {
         "id": 8,
-        "image": "/Assets/Images/evilpicklerick.png",
+        "image": "/assets/images/evilpicklerick.png",
         "title": "Evil Pickle Rick"
     },
     {
         "id": 9,
-        "image": "/Assets/Images/giantduck.png",
+        "image": "/assets/images/giantduck.png",
         "title": "Giant Duck"
     },
     {
         "id": 10,
-        "image": "/Assets/Images/nurserick.png",
+        "image": "/assets/images/nurserick.png",
         "title": "Nurse Rick"
     },
     {
         "id": 11,
-        "image": "/Assets/Images/picklerick.png",
+        "image": "/assets/images/picklerick.png",
         "title": "Pickle Rick"
     },
     {
         "id": 12,
-        "image": "/Assets/Images/terrifiedmorty.png",
+        "image": "/assets/images/terrifiedmorty.png",
         "title": "Terrified Morty"
     }
 ]
